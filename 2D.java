@@ -1,4 +1,4 @@
-class Nigga{
+class TWOd{
     public static void main(String args[]){
         String[][] cars = {{"Camaro", "Corvette", "Mustang"},
                            {"Ferrari","Lambo","Tesla"},
