@@ -1,0 +1,102 @@
+{
+  "supportedApplicationIds": [
+    "application_id_microsoft_powerpoint",
+    "420fd454-0c36-499d-bde4-146823b16147"
+  ],
+  "name": "PLUGIN_POWERPOINT_NAME",
+  "author": "PLUGIN_AUTHOR_LOGITECH",
+  "description": "PLUGIN_POWERPOINT_DESCRIPTION",
+  "icon": "",
+  "poster": "",
+  "guid": "f265758a5c0c92d3",
+  "enabled": true,
+  "actionSdk": {
+    "enabled": true,
+    "actions": [
+      {
+        "name": "PLUGIN_THUMBWHEEL_TURN",
+        "actionId": "thumbwheel_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CONTROLID_CLICK",
+        "actionId": "controlid_click_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_ACTIVATE_ACTION",
+        "actionId": "activate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_DEACTIVATE_ACTION",
+        "actionId": "deactivate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TOUCH",
+        "actionId": "crown_touch_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TURN",
+        "actionId": "crown_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      }
+    ]
+  },
+  "eventsSdk": {
+    "enabled": true,
+    "events": []
+  },
+  "installationMessage": "PLUGIN_POWERPOINT_INSTALLATION_MESSAGE",
+  "downloadMessage": "PLUGIN_POWERPOINT_DOWNLOAD_MESSAGE",
+  "installationCommands": [
+    {
+      "executable": "{plugin_installer_path}",
+      "parameters": [
+        "/i",
+        "15dda906dfdffc11"
+      ],
+      "silent": true,
+      "runAsAdmin": true,
+      "platform": "win",
+      "conditionals": [
+        {
+          "validationKey": {
+            "path": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Visual Studio 2010 Tools for Office Runtime (x64)",
+            "type": "REGISTRY"
+          },
+          "majorVersion": 10,
+          "minorVersion": 0,
+          "buildNumber": 60910,
+          "installType": "UPDATE"
+        },
+        {
+          "validationKey": {
+            "path": "SOFTWARE\\Logitech",
+            "name": "LogiOptionsCertificatesImported10",
+            "expectedValue": "True",
+            "type": "REGISTRY"
+          },
+          "installType": "IGNORE"
+        }
+      ]
+    },
+    {
+      "executable": "{plugin_installer_path_as_user}",
+      "parameters": [
+        "/i",
+        "f265758a5c0c92d3"
+      ],
+      "silent": true,
+      "platform": "win"
+    }
+  ]
+}

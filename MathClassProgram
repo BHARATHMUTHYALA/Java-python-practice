@@ -1,0 +1,10 @@
+public class MathClassProgram{
+    public static void main(String[] args)
+    
+{
+    double x = 3.14;
+    double y=-1;
+    double absolute=Math.abs(y); 
+    System.out.println(absolute);
+}
+}

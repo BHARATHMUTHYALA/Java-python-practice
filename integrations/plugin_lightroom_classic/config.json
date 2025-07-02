@@ -1,0 +1,87 @@
+{
+  "supportedApplicationIds": [
+    "application_id_adobe_lightroom_classic",
+    "420fd454-0c36-499d-bde4-146823b16147"
+  ],
+  "icon": "",
+  "poster": "",
+  "guid": "d53155da84dfb749",
+  "enabled": true,
+  "actionSdk": {
+    "enabled": true,
+    "actions": [
+      {
+        "name": "PLUGIN_THUMBWHEEL_TURN",
+        "actionId": "thumbwheel_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CONTROLID_CLICK",
+        "actionId": "controlid_click_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_ACTIVATE_ACTION",
+        "actionId": "activate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_DEACTIVATE_ACTION",
+        "actionId": "deactivate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TOUCH",
+        "actionId": "crown_touch_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TURN",
+        "actionId": "crown_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      }
+    ]
+  },
+  "eventsSdk": {
+    "enabled": true,
+    "events": [
+      {
+        "eventId": "generic_event"
+      },
+      {
+        "eventId": "tool_change"
+      },
+      {
+        "eventId": "tool_update"
+      }
+    ]
+  },
+  "installationCommands": [
+    {
+      "executable": "{plugin_installer_path}",
+      "parameters": [
+        "/i",
+        "d53155da84dfb749"
+      ],
+      "silent": true,
+      "runAsAdmin": true,
+      "platform": "win"
+    },
+    {
+      "executable": "{plugin_installer_path}",
+      "parameters": [
+        "--install",
+        "d53155da84dfb749"
+      ],
+      "silent": true,
+      "runAsAdmin": true,
+      "platform": "osx"
+    }
+  ]
+}

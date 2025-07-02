@@ -1,0 +1,82 @@
+{
+  "supportedApplicationIds": [
+    "application_id_adobe_premierepro",
+    "420fd454-0c36-499d-bde4-146823b16147"
+  ],
+  "name": "PLUGIN_PREMIEREPRO_NAME",
+  "author": "PLUGIN_AUTHOR_LOGITECH",
+  "description": "PLUGIN_PREMIEREPRO_DESCRIPTION",
+  "icon": "",
+  "poster": "",
+  "guid": "f1fc90be063306ef",
+  "enabled": true,
+  "actionSdk": {
+    "enabled": true,
+    "actions": [
+      {
+        "name": "PLUGIN_THUMBWHEEL_TURN",
+        "actionId": "thumbwheel_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CONTROLID_CLICK",
+        "actionId": "controlid_click_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_ACTIVATE_ACTION",
+        "actionId": "activate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_DEACTIVATE_ACTION",
+        "actionId": "deactivate_plugin",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TOUCH",
+        "actionId": "crown_touch_action",
+        "actionIcon": "",
+        "parameters": []
+      },
+      {
+        "name": "PLUGIN_CROWN_TURN",
+        "actionId": "crown_turn_action",
+        "actionIcon": "",
+        "parameters": []
+      }
+    ]
+  },
+  "eventsSdk": {
+    "enabled": true,
+    "events": []
+  },
+  "installationMessage": "PLUGIN_PREMIEREPRO_INSTALLATION_MESSAGE",
+  "downloadMessage": "PLUGIN_PREMIEREPRO_DOWNLOAD_MESSAGE",
+  "installationCommands": [
+    {
+      "executable": "{plugin_installer_path}",
+      "parameters": [
+        "/i",
+        "f1fc90be063306ef"
+      ],
+      "silent": true,
+      "runAsAdmin": true,
+      "platform": "win"
+    },
+    {
+      "executable": "{plugin_installer_path}",
+      "parameters": [
+        "--install",
+        "f1fc90be063306ef"
+      ],
+      "silent": true,
+      "runAsAdmin": false,
+      "platform": "osx"
+    }
+  ]
+}
